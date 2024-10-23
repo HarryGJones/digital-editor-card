@@ -35,7 +35,7 @@ body {
     left: 10px;
     width: 2px;
     height: 80%;
-    background: linear-gradient(to bottom, #d84baa, #dbaa72, #ebf9b8, #32ffaa, #13c5d7, violet); /* Rainbow gradient */
+    background: linear-gradient(to bottom, rgba(216, 75, 170, 0.8), rgba(219, 170, 114, 0.8), rgba(235, 249, 184, 0.8), rgba(50, 250, 170, 0.8), rgba(19, 197, 215, 0.8), rgba(238, 224, 255, 0.8)); /* Use rgba for transparency */
     border-radius: 10px 0 0 10px;
 }
 
@@ -46,27 +46,29 @@ body {
     left: 10px;
     height: 2px;
     width: 90%;
-    background: linear-gradient(to right, #d84baa 0%, #dbaa72 25%, #ebf9b8 40%, #32ffaa 55%, #13c5d7 75%, violet 90%); /* Rainbow gradient */
+    background: linear-gradient(to right, rgba(216, 75, 170, 0.8), rgba(219, 170, 114, 0.8), rgba(235, 249, 184, 0.8), rgba(50, 250, 170, 0.8), rgba(19, 197, 215, 0.8), rgba(238, 224, 255, 0.8)); /* Use rgba for transparency */
     border-radius: 10px 10px 0 0;
 }
 
+/* Right vertical line */
 .border-right {
     position: absolute;
     bottom: 10px;
     right: 10px;
     height: 80%;
     width: 2px;
-    background: linear-gradient(to bottom, #d84baa, #dbaa72, #ebf9b8, #32ffaa, #13c5d7, violet); /* Rainbow gradient */
+    background: linear-gradient(to bottom, rgba(216, 75, 170, 0.8), rgba(219, 170, 114, 0.8), rgba(235, 249, 184, 0.8), rgba(50, 250, 170, 0.8), rgba(19, 197, 215, 0.8), rgba(238, 224, 255, 0.8)); /* Use rgba for transparency */
     border-radius: 10px; /* Optional: rounded ends */
 }
 
+/* Bottom border */
 .border-bottom {
     position: absolute;
     bottom: 10px;
     left: 23px;
     height: 2px;
     width: 90%;
-    background: linear-gradient(to right, #d84baa 10%, #dbaa72 25%, #ebf9b8 40%, #32ffaa 55%, #13c5d7 75%, violet 100%); /* Rainbow gradient */
+    background: linear-gradient(to right, rgba(216, 75, 170, 0.8), rgba(219, 170, 114, 0.8), rgba(235, 249, 184, 0.8), rgba(50, 250, 170, 0.8), rgba(19, 197, 215, 0.8), rgba(238, 224, 255, 0.8)); /* Use rgba for transparency */
     border-radius: 10px 0 0 10px;
 }
 
