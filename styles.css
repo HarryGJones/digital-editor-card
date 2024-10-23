@@ -1,0 +1,147 @@
+body {
+    background-color: #2b2b2b; /* Dark background */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card-container {
+    position: relative;
+    background-color: #1a1a1a; /* Slightly lighter dark background for contrast */
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 80%; /* Adjust to percentage for responsiveness */
+    max-width: 300px; /* Optional max-width for larger screens */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    margin: 20px; /* Margin for better spacing on small screens */
+}
+
+.bio {
+    padding-left: 5px;
+    padding-right: 5px;
+    max-width: 280px;
+    margin: auto;
+}
+
+/* Vertical rainbow line on the left */
+.border-left {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 2px;
+    height: 80%;
+    background: linear-gradient(to bottom, #d84baa, #dbaa72, #ebf9b8, #32ffaa, #13c5d7, violet); /* Rainbow gradient */
+    border-radius: 10px 0 0 10px;
+}
+
+/* Horizontal rainbow line at the top */
+.border-top {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 2px;
+    width: 90%;
+    background: linear-gradient(to right, #d84baa 0%, #dbaa72 25%, #ebf9b8 40%, #32ffaa 55%, #13c5d7 75%, violet 90%); /* Rainbow gradient */
+    border-radius: 10px 10px 0 0;
+}
+
+.border-right {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    height: 80%;
+    width: 2px;
+    background: linear-gradient(to bottom, #d84baa, #dbaa72, #ebf9b8, #32ffaa, #13c5d7, violet); /* Rainbow gradient */
+    border-radius: 10px; /* Optional: rounded ends */
+}
+
+.border-bottom {
+    position: absolute;
+    bottom: 10px;
+    left: 23px;
+    height: 2px;
+    width: 90%;
+    background: linear-gradient(to right, #d84baa 10%, #dbaa72 25%, #ebf9b8 40%, #32ffaa 55%, #13c5d7 75%, violet 100%); /* Rainbow gradient */
+    border-radius: 10px 0 0 10px;
+}
+
+/* Profile picture styles */
+.profile-pic {
+    width: 100px; /* Adjust width for responsiveness */
+    max-width: 100%; /* Ensure it doesn't exceed the container */
+    border-radius: 25%; /* Keep it rounded */
+    object-fit: cover; /* Ensure the image covers the entire area */
+    margin-top: 20px; /* Space above the profile picture */
+}
+
+.links {
+    padding-bottom: 20px;
+}
+
+/* Square spiral in the top-right corner */
+.spiral-top-right {
+    position: absolute;
+    top: 6px; /* Aligns with the top of the card */
+    right: 5px; /* Aligns with the right of the card */
+    width: 50px; /* Adjust size if needed */
+    height: 50px; /* Adjust size if needed */
+}
+
+.spiral-bottom-left {
+    position: absolute;
+    bottom: 6px; /* Aligns with the bottom of the card */
+    left: 5px; /* Aligns with the left of the card */
+    width: 50px; /* Adjust size if needed */
+    height: 50px; /* Adjust size if needed */
+    transform: rotate(180deg);
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .card-container {
+        width: 90%; /* Wider on smaller screens */
+        padding: 1rem;
+    }
+
+    .profile-pic {
+        width: 80px; /* Smaller image */
+    }
+
+    .bio {
+        font-size: 0.9rem; /* Smaller font size */
+    }
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between icons */
+    padding-bottom: 20px;
+}
+
+.icon-link {
+    color: #ffffff; /* Default color */
+    font-size: 30px; /* Icon size */
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.icon-link:hover {
+    background: linear-gradient(to right, #d84baa, #dbaa72, #ebf9b8, #32ffaa, #13c5d7, violet); /* Rainbow gradient */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.site-logo {
+    max-width: 150px; /* Adjust the width */
+    height: auto; /* Keep the aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the logo with some margin below */
+}
