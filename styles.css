@@ -63,7 +63,7 @@ body {
 .border-bottom {
     position: absolute;
     bottom: 10px;
-    left: 23px;
+    left: 22px;
     height: 2px;
     width: 90%;
     background: linear-gradient(to right, #d84baa 10%, #dbaa72 25%, #ebf9b8 40%, #32ffaa 55%, #13c5d7 75%, violet 100%); /* Rainbow gradient */
